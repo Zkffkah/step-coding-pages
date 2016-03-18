@@ -1,0 +1,7 @@
+name: coding-pages
+version: 0.1.0
+description: deploy to coding.net pages
+keywords:
+  - coding.net
+  - pages
+  - deploy
