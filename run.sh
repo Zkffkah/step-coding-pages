@@ -34,10 +34,6 @@ fi
 
 # setup branch
 branch="coding-pages"
-# if [[ "$repo" =~ $WERCKER_GIT_OWNER\/$  \.github\.(io|com)$ ]]; then
-# 	branch="master"
-# fi
-
 
 # init repository
 git init
@@ -52,7 +48,7 @@ result="$(git push -f $remote master:$branch)"
 if [[ $? -ne 0 ]]
 then
   warning "$result"
-  fail "failed pushing to github pages"
+  fail "failed pushing to coding pages"
 else
   success "pushed to coding pages"
 fi
